@@ -1,0 +1,6 @@
+# Run these command to generate the latexdiff
+latexdiff --flatten --math-markup=0 old/paper.tex new/paper.tex > diff.tex
+
+# Then compile the latex diff; press return through all errors
+pdflatex diff.tex
+

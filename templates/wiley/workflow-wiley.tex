@@ -1,0 +1,67 @@
+% nmedoc.tex V3.01, 2 March 2016
+
+\documentclass[times]{nmeauth}
+
+%\usepackage{moreverb}
+
+\usepackage[colorlinks,bookmarksopen,bookmarksnumbered,citecolor=red,urlcolor=red]{hyperref}
+\usepackage{url}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx} 
+\usepackage{algorithm}
+\usepackage{subfig} 
+\usepackage{bm}
+
+\input{pauls-macros}
+
+\newcommand\BibTeX{{\rmfamily B\kern-.05em \textsc{i\kern-.025em b}\kern-.08em
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\def\volumeyear{2016}
+
+\begin{document}
+
+\runningheads{P.~G.~Constantine, J.~Q.~Coauthor}{Paul's workflow}
+
+\title{Paul's paper workflow\footnotemark[2]}
+
+\author{
+P.~G.~Constantine\affil{1}\corrauth 
+and 
+J.~Q.~Coauthor\affil{2}
+}
+
+\corraddr{
+Email: \url{paul.constantine@mines.edu}
+}
+
+\address{%
+\affilnum{1}Department of Applied Mathematics and Statistics, Colorado School of Mines, Golden, CO
+\break 
+\affilnum{2}Department of Something, University of Somewhere, USA
+}
+
+\begin{abstract}
+This document describes how to set up the workflow for a paper collaborating with Paul.
+\end{abstract}
+
+\keywords{workflow; latex; bibtex}
+
+\maketitle
+
+\footnotetext[2]{Work supported by \dots}
+
+\vspace{-6pt}
+
+\input{sec0-intro}
+\input{sec1-latex}
+\input{sec2-code}
+\input{sec3-bibtex}
+
+\section*{Acknowledgments}
+Thanks to all my coauthors for helping me hone my workflow.
+
+\bibliographystyle{wileyj}
+\bibliography{workflow}
+
+\end{document}

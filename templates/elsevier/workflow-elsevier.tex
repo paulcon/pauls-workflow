@@ -1,0 +1,107 @@
+\documentclass[review]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+\journal{Elsevier Journal}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx} 
+\usepackage{algorithm}
+\usepackage{subfig} 
+\usepackage{bm}
+
+\input{pauls-macros}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{assumption}{Assumption}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Paul's paper workflow}
+%\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
+
+%% Group authors per affiliation:
+%\author{Elsevier\fnref{myfootnote}}
+%\address{Radarweg 29, Amsterdam}
+%\fntext[myfootnote]{Since 1880.}
+
+%% or include affiliations in footnotes:
+%\author[mymainaddress,mysecondaryaddress]{Elsevier Inc}
+%\ead[url]{www.elsevier.com}
+
+%\author[mysecondaryaddress]{Global Customer Service\corref{mycorrespondingauthor}}
+%\cortext[mycorrespondingauthor]{Corresponding author}
+%\ead{support@elsevier.com}
+
+%\address[mymainaddress]{1600 John F Kennedy Boulevard, Philadelphia}
+%\address[mysecondaryaddress]{360 Park Avenue South, New York}
+
+\author[CSM]{Paul G.~Constantine}
+\address[CSM]{Department of Applied Mathematics and Statistics, Colorado School of Mines, Golden, CO 80211} 
+\ead{paul.constantine@mines.edu}
+
+\author[UT]{Johnny Q.~Coauthor}
+\address[UT]{Department of Stuff, University of Somewhere, Somewhere, TX 99999}
+
+\begin{abstract}
+This document describes how to set up the workflow for a paper collaborating with Paul.
+\end{abstract}
+
+\begin{keyword}
+workflow \sep latex \sep bibtex
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\input{sec0-intro}
+\input{sec1-latex}
+\input{sec2-code}
+\input{sec3-bibtex}
+
+\section*{Acknowledgments}
+
+\noindent Thanks to all my coauthors for helping me hone my workflow.
+
+\section*{References}
+
+\bibliography{workflow}
+
+\end{document}

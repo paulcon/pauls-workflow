@@ -1,0 +1,96 @@
+% SIAM Article Template
+\documentclass[review]{siamart0216}
+
+% Packages and macros go here
+\usepackage{amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{algorithmic}
+\ifpdf
+  \DeclareGraphicsExtensions{.eps,.pdf,.png,.jpg}
+\else
+  \DeclareGraphicsExtensions{.eps}
+\fi
+\usepackage{amsopn}
+
+% Declare title and authors, without \thanks
+\newcommand{\TheTitle}{Paul's paper workflow} 
+\newcommand{\TheAuthors}{P. G. Constantine, J. Q. Coauthor}
+
+% Sets running headers as well as PDF title and authors
+\headers{\TheTitle}{\TheAuthors}
+
+% Title. If the supplement option is on, then "Supplementary Material"
+% is automatically inserted before the title.
+\title{{\TheTitle}\thanks{This work was sponsored by \dots}}
+
+% Authors: full names plus addresses.
+\author{
+Paul G.~Constantine%
+\thanks{Department of Applied Mathematics and Statistics, Colorado School of Mines, Golden, CO
+(\email{paul.constantine@mines.edu}, \url{http://inside.mines.edu/\string~pconstan/}).}
+\and
+Johnny Q. Coauthor%
+\thanks{Department of Something, Fictional University, Boise, ID (\email{jqcoauthor@fictional.edu}).}
+}
+
+% Additional macros
+\input{pauls-macros}
+
+% Optional PDF information
+\ifpdf
+\hypersetup{
+  pdftitle={\TheTitle},
+  pdfauthor={\TheAuthors}
+}
+\fi
+
+% The next statement enables references to information in the
+% supplement. See the xr-hyperref package for details.
+
+%\externaldocument{ex_supplement}
+
+% FundRef data to be entered by SIAM
+%<funding-group>
+%<award-group>
+%<funding-source>
+%<named-content content-type="funder-name"> 
+%</named-content> 
+%<named-content content-type="funder-identifier"> 
+%</named-content>
+%</funding-source>
+%<award-id> </award-id>
+%</award-group>
+%</funding-group>
+
+\begin{document}
+
+\maketitle
+
+% REQUIRED
+\begin{abstract}
+This document describes how to set up the workflow for a paper collaborating with Paul.
+\end{abstract}
+
+% REQUIRED
+\begin{keywords}
+workflow, latex, bibtex
+\end{keywords}
+
+% REQUIRED
+\begin{AMS}
+68Q25, 68R10, 68U05
+\end{AMS}
+
+\input{sec0-intro}
+\input{sec1-latex}
+\input{sec2-code}
+\input{sec3-bibtex}
+
+\section*{Acknowledgments}
+
+\noindent Thanks to all my coauthors for helping me hone my workflow.
+
+\bibliographystyle{siamplain}
+\bibliography{workflow}
+\end{document}
