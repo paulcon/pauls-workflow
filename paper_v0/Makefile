@@ -25,4 +25,4 @@ pdf: ${FILE}.tex ${BIB}
 
 # Remove temporary files (helps when things are not refreshing)
 clean:
-	rm -f *.aux *.blg *.dvi *.log *.ps *.bbl *.out
+	rm -f *.aux *.blg *.dvi *.log *.ps *.bbl *.out *.spl

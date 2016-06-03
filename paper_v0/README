@@ -1,0 +1,8 @@
+This is where the paper lives. To compile the paper, type 'make'.
+
+If you change the file name or bibliography name, then you need
+to update the Makefile, too.
+
+I keep the .tex document divided into sections so multiple
+people make work on different sections. It also makes it easier
+to switch LaTeX templates.
