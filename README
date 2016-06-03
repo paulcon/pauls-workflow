@@ -1,0 +1,3 @@
+This repo contains the files I start with when working on a paper.
+
+To compile workflow.tex in paper_v0, cd into paper_v0 and type 'make'.
