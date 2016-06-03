@@ -1,3 +1,17 @@
 This repo contains the files I start with when working on a paper.
 
 To compile workflow.tex in paper_v0, cd into paper_v0 and type 'make'.
+
+The typical lifecycle of a paper is:
+(1) Write the paper (don't forget to spellcheck).
+(2) Write a cover letter.
+(3) Put the codes on bitbucket.
+(4) Submit the paper.
+(5) Put the paper on arXiv.
+
+Once the reviews come back:
+(1) Revise the paper according to reviewers' comments.
+(2) Write reseponses for the reviewers' comments.
+(3) Generate a latexdiff.
+(4) Submit the revision with reviewer responses.
+(5) Update the arXiv and bitbucket.
