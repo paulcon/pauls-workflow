@@ -1,0 +1,20 @@
+\section{Introduction}
+\label{sec:intro}
+
+\lettrine{T}his document describes the things you need to set up to follow Paul's workflow for writing papers. Here's the software you need to get started:
+\begin{enumerate}
+\item LaTeX distribution that enables you to run \texttt{latex}, \texttt{pdflatex}, \texttt{bibtex}, \texttt{dvips}, and \texttt{ps2pdf} from the command line,
+\item text editor (I use Emacs),
+\item Bibtex reference manager (I use JabRef (\url{jabref.org}) because it's based on Java so it's cross platform),
+\item Dropbox for sharing a folder.
+\end{enumerate}
+There are certainly plenty of ways to share LaTeX documents and papers. This is just what's worked for me. I have a directory structure for a paper with the following directories:
+\begin{itemize}
+\item \texttt{paper\_v0}, where the paper tex files are along with a \texttt{figs} directory; if big changes happen, I might make a new \texttt{paper\_vX} folder
+\item \texttt{references}, where I keep PDFs of papers I'm referencing
+\item \texttt{code}, where I keep scripts for numerical experiments (helps reproducibility and recreating figures)
+\item \texttt{arxiv}, I make a separate folder for the version I put on arXiv
+\item \texttt{reviewer\_response}, where I keep a text file of the initial reviews and a LaTeX file with reviewer responses
+\item \texttt{latexdiff}, when I submit a revision I include the results of \texttt{latexdiff} (see example syntax in folder)
+\item \texttt{paper\_r0}, a folder for the revision; this usually begins as a duplicate of \texttt{paper\_v0}
+\end{itemize}

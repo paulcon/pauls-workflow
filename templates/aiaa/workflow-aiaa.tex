@@ -1,0 +1,47 @@
+\documentclass[conf]{new-aiaa}
+% for journal papers
+%\documentclass[journal]{new-aiaa}
+\usepackage[utf8]{inputenc}
+
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\usepackage{longtable,tabularx}
+\setlength\LTleft{0pt} 
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx} 
+\usepackage{algorithm}
+\usepackage{subfig} 
+\usepackage{bm}
+
+\title{Paul's paper workflow}
+
+\author{First A. Author\footnote{Insert Job Title, Department Name, Address/Mail Stop, and AIAA Member Grade (if any) for first author.} and Second B. Author Jr.\footnote{Insert Job Title, Department Name, Address/Mail Stop, and AIAA Member Grade (if any) for second author.}}
+\affil{Business or Academic Affiliation 1, City, State, Zip Code}
+\author{Third C. Author\footnote{Insert Job Title, Department Name, Address/Mail Stop, and AIAA Member Grade (if any) for third author.}}
+\affil{Business or Academic Affiliation 2, City, Province, Zip Code, Country}
+\author{Fourth D. Author\footnote{Insert Job Title, Department Name, Address/Mail Stop, and AIAA Member Grade (if any) for fourth author (etc.).}}
+\affil{Business or Academic Affiliation 2, City, State, Zip Code}
+
+\begin{document}
+	
+\maketitle
+
+		\begin{abstract}
+			This document describes how to set up the workflow for a paper collaborating with Paul.
+		\end{abstract}				
+	
+	\input{sec-nomenclature}
+	\input{sec0-intro}
+	\input{sec1-latex}
+	\input{sec2-code}
+	\input{sec3-bibtex}
+	\input{sec-AIAA}
+	
+	\section*{Acknowledgments}
+	
+	\noindent Thanks to all my coauthors for helping me hone my workflow.
+	
+	%\section*{References}
+	\bibliography{workflow}
+	
+\end{document}
